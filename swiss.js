@@ -60,3 +60,11 @@ Swiss.prototype.addAll = function(){
 	this.addAllArrayHelpers()
 	this.addAllObjectHelpers();
 };
+
+Swiss.prototype.singleQuote = function(str){
+	return "\'" + str + "\'";
+};
+
+Swiss.prototype.doubleQuote = function(str){
+	return '\"' + str + '\"';
+};
