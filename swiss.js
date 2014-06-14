@@ -26,29 +26,10 @@ Swiss.prototype.addLastFunction = function(){
 	};
 };
 
-//Pops element from front of array, i.e. the zeroth element
-//This is the function version that does not modify the Array prototype
-Swiss.prototype.popFirst = function(arr){
-	var ret_val = arr[0];
-	arr.shift();
-	return ret_val;
-};
-
-//Same as popFirst, but adds it to the Array prototype
-//***WARNING*** Modifies array prototype
-Swiss.prototype.addPopFirstFunction = function(){
-	Array.prototype.popFirst = function(){
-		var ret_val = this[0];
-		this.shift();
-		return ret_val;
-	};
-};
-
 //Convenience method to add only the Array helpers
 Swiss.prototype.addAllArrayHelpers = function(){
 	this.addAppendFunction();
 	this.addLastFunction();
-	this.addPopFirstFunction();
 };
 
 Swiss.prototype.addAllObjectHelpers = function(){
