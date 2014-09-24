@@ -49,3 +49,13 @@ Swiss.prototype.singleQuote = function(str){
 Swiss.prototype.doubleQuote = function(str){
 	return '\"' + str + '\"';
 };
+
+Swiss.prototype.isFalsy = function(val){ 
+	if (val=="false" || val==false || val==0 || val=="0" || val==null || !val){ return true }
+	else { return false } 
+};
+
+Swiss.prototype.isTruthy = function(val){
+	if (val==true || val=="true" || val==1 || val=="1"){ return true }
+	else { return false }
+};
