@@ -1,7 +1,7 @@
 #Swiss.js
 
 ###Swiss army knife of 'odds and ends' utilities in JavaScript
-####aka things that should be there but aren't
+####i.e. things that should be there but aren't
 
 Swiss.js is aimed at adding microhelper utilities in JavaScript that really ought to be there.
 
