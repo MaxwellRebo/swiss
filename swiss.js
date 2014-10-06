@@ -4,7 +4,7 @@
 	var rt = this;
 
 	var Swiss = function(){
-		this.version = "0.0.1";
+		this.version = "0.1.1";
 	};
 
 	Swiss.prototype.isObject = function(thing){
