@@ -51,6 +51,24 @@
 		else { return false }
 	};
 
+	Swiss.prototype.findIndexBy = function(array_of_objects, key, value){
+		for (var i = 0; i < array_of_objects.length; i++) {
+	        if (array_of_objects[i][key] == value) {
+	            return i;
+	        }
+		}
+	};
+
+	Swiss.prototype.findIndicesBy = function(array_of_objects, key, value){
+		var indices = [];
+		for (var i = 0; i < array_of_objects.length; i++) {
+	        if (array_of_objects[i][key] == value) {
+	            indices.push(i);
+	        }
+		}
+		return indices;
+	};
+
 	var swiss = new Swiss();
 
 	if (typeof module !== 'undefined' && module.exports) {
